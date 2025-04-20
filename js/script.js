@@ -13,7 +13,7 @@ document.getElementById('login-form').addEventListener('submit', async function 
   const mensajeError = document.getElementById('mensaje-error');
 
   try {
-    const response = await fetch('/api/login', {
+    const response = await fetch('/api/Login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })
