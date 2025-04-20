@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Cómo quieres iniciar sesión?</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="rol-container">
+    <img src="img/logo.png" alt="Logo">
+    <h2>¿Cómo quieres iniciar sesión?</h2>
+    <button onclick="seleccionarRol('mesero')">Mesero</button>
+    <button onclick="seleccionarRol('cajero')">Cajero</button>
+    <button onclick="seleccionarRol('admin')">Administrador</button>
+  </div>
+  <script>
+    function seleccionarRol(rol) {
+      localStorage.setItem('rolSeleccionado', rol);
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
+

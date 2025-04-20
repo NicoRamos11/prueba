@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  margin: 10% auto;
+  padding: 0;
+}
+img{
+  width: 50%;
+  margin-top: 40px;
+  border-radius: 100px;
+}
+.login-container, .rol-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+  max-width: 400px;
+  height: 700px;
+  gap: 25px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container form,
+.rol-container {
+  width: 100%;
+}
+
+.login-container h2,
+.rol-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 94%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #c51919;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #da3232;
+}
+
+.recordar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.volver {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.volver a {
+  color: #003049;
+  text-decoration: none;
+}
+
+.volver a:hover {
+  text-decoration: underline;
+}
+  .recup
+  {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  @media (min-width: 600px) {
+    .login-container, .rol-container {
+      max-width: 400px;
+    }
+  }
